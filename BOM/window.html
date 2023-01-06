@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>window</title>
+</head>
+<body>
+<script>
+    //var定义的变量会被添加到全局对象
+    var varVariable="varVariable";
+    //let定义的变量不会被添加到全局对象
+    let letVariable="letVariable";
+    function sayHi(){
+        alert("Hi, window");
+    }
+    //弹窗显示varVariable
+    alert(window.varVariable);
+    //弹窗显示undefined
+    alert(window.letVariable);
+    window.sayHi();
+</script>
+</body>
+</html>
